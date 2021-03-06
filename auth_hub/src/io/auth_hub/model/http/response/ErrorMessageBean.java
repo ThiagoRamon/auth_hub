@@ -1,4 +1,4 @@
-package io.auth_hub.model.core;
+package io.auth_hub.model.http.response;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
