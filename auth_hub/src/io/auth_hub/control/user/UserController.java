@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import io.auth_hub.model.core.ErrorMessageBean;
+import io.auth_hub.model.http.response.ErrorMessageBean;
 import io.auth_hub.model.http.response.HttpResponseBean;
 import io.auth_hub.model.user.UserBean;
 import io.auth_hub.model.util.UtilBean;
