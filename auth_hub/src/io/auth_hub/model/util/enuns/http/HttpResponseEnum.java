@@ -1,4 +1,4 @@
-package io.auth_hub.util.http.enums;
+package io.auth_hub.model.util.enuns.http;
 
 public enum HttpResponseEnum {
 	 OK(200, "OK"),

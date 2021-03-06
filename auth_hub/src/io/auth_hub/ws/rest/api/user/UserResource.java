@@ -1,4 +1,4 @@
-package io.auth_hub.ws.rest.user;
+package io.auth_hub.ws.rest.api.user;
 
 import javax.inject.Inject;
 //import java.util.logging.Logger;
@@ -44,7 +44,7 @@ public class UserResource extends UserController {
 	public Object findAll() {
 		Object response  = "FOID";
 		try {
-			response = (UserBean) new UserBean(UtilBean.getHashFromString("1", "SHA-1"),"username", "email", "password");
+			response = (UserBean) new UserBean(UtilBean.getHashFromString("1", "SHA-1"),"username", "email");
 		} catch (Exception e) {
 			// TODO: handle exception
 			response =(String) e.getMessage();

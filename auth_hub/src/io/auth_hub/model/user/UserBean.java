@@ -26,17 +26,18 @@ public class UserBean extends EntityBean implements Serializable {
 	private PasscodeBean  passcode;
 	private SituationBean situation;
 	private TypeBean 	  type;
+	
 	public UserBean() {}
-	public UserBean(String username, String email, String password) {
+	
+	public UserBean(String username, String email) {
 		this.username = username;
 		this.email    = email;
-		this.passcode = new PasscodeBean(password);
 	}
-	public UserBean(String id,String username, String email, String password) {
+	
+	public UserBean(String id,String username, String email) {
 		this.id       = id;
 		this.username = username;
 		this.email    = email;
-		this.passcode = new PasscodeBean(password);
 	}
 	
 	public String getUsername() {
@@ -75,13 +76,7 @@ public class UserBean extends EntityBean implements Serializable {
 	@Override
 	public String toString() {
 		//new UtilBean();
-		return "UserBean [id="+  UtilBean.getHashFromString(getId().toString(), "SHA-1") +", username=" + username + ", email=" + email + ", password=" + passcode.getCode() + "]";
+		return "UserBean [id="+  UtilBean.getHashFromString(getId().toString(), "SHA-1") +", username=" + username + ", email=" + email + ", password=*******]";
 	}
-	public String toJson() {
-		//new UtilBean();
-		return "{user:{id:"+  UtilBean.getHashFromString(getId().toString(), "SHA-1") +", username:" + username + ", email:" + email + ", password:" + passcode.getCode() + "}}";
-	}
-	
-	
 	
 }

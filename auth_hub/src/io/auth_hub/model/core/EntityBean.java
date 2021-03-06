@@ -2,15 +2,15 @@ package io.auth_hub.model.core;
 
 import java.util.Date;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+
 
 public class EntityBean {
-	protected String id;
 	
-	private Date    insertDate;
-	private Date    updateDate;
-	@JsonIgnore
-	private Date    deleteDate;
+	protected String  id;
+	private   Date    insertDate;
+	private   Date    updateDate;
+	private   Date    deleteDate;
+	
 	public String getId() {
 		return id;
 	}

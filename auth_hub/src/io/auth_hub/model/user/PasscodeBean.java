@@ -4,11 +4,9 @@ import java.io.Serializable;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
-//import javax.xml.bind.annotation.XmlRootElement;
-
 import io.auth_hub.model.core.EntityBean;
 import io.auth_hub.model.core.SituationBean;
-//@XmlRootElement(name="password")
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class PasscodeBean extends EntityBean implements Serializable{
 	/**
